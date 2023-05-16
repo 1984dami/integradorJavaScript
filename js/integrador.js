@@ -26,8 +26,7 @@ function calcularPrecioFinal() {
     document.getElementById("apagar").innerHTML="Total a pagar: " ;
     document.getElementById("apagar").className="text-success fw-bold";
     document.getElementById("precioFinal").value="$"+`${precioFin}`;
-    document.getElementById("precioFinal2").innerHTML=precioFin;
-    document.getElementById("precioFinal2").style.display="none";
+    
 }
 
 //Limpiar formulario
