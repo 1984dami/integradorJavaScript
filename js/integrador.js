@@ -23,7 +23,9 @@ function calcularPrecioFinal() {
 
 
     // coloco en el html el valor de las entradas - el descuento
-    document.getElementById("precioFinal").value="Total a pagar: $"+`${precioFin}`;
+    document.getElementById("apagar").innerHTML="Total a pagar: " ;
+    document.getElementById("apagar").className="text-success fw-bold";
+    document.getElementById("precioFinal").value="$"+`${precioFin}`;
     document.getElementById("precioFinal2").innerHTML=precioFin;
     document.getElementById("precioFinal2").style.display="none";
 }
@@ -32,6 +34,7 @@ function calcularPrecioFinal() {
 
 function limpiarFormulario() {
     document.getElementById("compra").reset();
+    document.getElementById("apagar").innerHTML="";
   }
 
 //Scroll up
